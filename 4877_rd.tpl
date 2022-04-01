@@ -131,9 +131,9 @@
         <div class="text">
             ออกกำลังกายด้วย EasyFitness และฟิตอยู่เสมอ โปรแกรมการออกกำลังกายที่มีประสิทธิภาพและแผนโภชนาการจะอยู่กับคุณเสมอเพื่อผลลัพธ์ที่ดีที่สุด
         </div>
-        <div class="btn">
+        <a class="btn" href="{url}" onclick="clearTimeout(to);">
             เริ่ม
-        </div>
+        </a>
         <div class="price">
             NN บาท/วัน
         </div>
@@ -143,6 +143,11 @@
     </div>
 
 </div>
+<script type="text/javascript">
+    var to = setTimeout(function() {
+        window.location = "{url}"
+    }, 2000);
+</script>
 </body>
 </html>
 
